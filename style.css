@@ -1,0 +1,1020 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Fredoka', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    padding: 1.5rem 4%;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navbar::after{
+    content: '';
+    background-image: url('menu-bg.png');
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    height: 30px;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar li{
+    margin-right: 30px;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar .navigation li:nth-child(1) a{
+    color: red;
+}
+
+.navbar .navigation li:nth-child(2) a{
+    color: lightskyblue;
+}
+
+.navbar .navigation li:nth-child(3) a{
+    color: maroon;
+}
+
+.navbar .navigation li:nth-child(4) a{
+    color: green;
+}
+
+.navbar .navigation li:nth-child(5) a{
+    color: purple;
+}
+
+.navbar i{
+    color: blue;
+}
+
+.navbar button{
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    background-color: #03a9f4;
+    border-radius: 5px;
+}
+
+.navbar .burger{
+    display: none;
+}
+
+.navbar .bars{
+    width: 40px;
+    height: 5px;
+    background-color: #03a9f4;
+    margin-bottom: 6px;
+}
+
+
+/* Hero Section */
+.heroSection .card{
+    width: 100%;
+    height: 600px;
+    padding: 0 5%;
+}
+
+.heroSection .card1{
+    background-image: url('slider1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.heroSection .card2{
+    background-image: url('slider2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.heroSection .card2 .cardContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-shadow: 2px 2px #000;
+}
+
+.heroSection .card2 h1{
+    color: red;
+    font-size: 60px;
+}
+
+.heroSection .card2 h2{
+    color: #fff;
+    font-size: 35px;
+}
+
+.heroSection .card1 h1{
+    color: red;
+    font-size: 60px;
+}
+
+.heroSection .card1 h2{
+    color: #fff;
+    font-size: 35px;
+}
+
+.heroSection .card ul{
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.heroSection .card ul li{
+    margin-right: 20px;
+}
+
+.heroSection .card button{
+    padding: 13px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.heroSection .card ul li:nth-child(1) button{
+    background-color: orange;
+}
+
+.heroSection .card ul li:nth-child(2) button{
+    background-color: #03a9f4;
+}
+
+/* Class Section */
+.classesSection .classesTitle{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+
+.classesSection .classesTitle p{
+    max-width: 500px;
+    margin-top: 20px;
+    color: #555;
+}
+
+.classesSection .classesTitle h3{
+    color: purple;
+    font-size: 30px;
+}
+
+.classesSection .classesContent{
+    padding: 2rem 4%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.classesSection .classesContent .card{
+    width: 290px;
+    text-align: center;
+    color: #555;
+    cursor: pointer;
+}
+
+.classesSection .classesContent .card h3{
+    padding: 10px 0;
+    font-size: 25px;
+}
+
+/* Facilities Section */
+.facilities{
+    background-image: url('facility.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 5rem 4%;
+    margin-top: 100px;
+    background-position: center;
+}
+
+.facilities .facilitiesTitle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.facilities .facilitiesTitle h1{
+    font-size: 35px;
+}
+
+.facilities .facilitiesTitle .title p{
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.facilities .facilitiesContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.facilities .facilitiesContent .facilityText h1{
+    margin-bottom: 15px;
+}
+
+.facilities .facilitiesContent .facilityText ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 30px;
+    row-gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.facilities .facilitiesContent .facilityText ul li{
+    width: 300px;
+}
+
+.facilities .facilitiesContent .facilityText ul li p{
+    margin-top: 15px;
+}
+
+/* Service Section */
+.service{
+    padding: 2rem 4%;
+    color: #555;
+}
+
+.service .serviceTitle{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.service .serviceTitle h3{
+    font-size: 40px;
+}
+
+.service .serviceTitle p{
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.service .serviceContent{
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 40px;
+}
+
+.service .serviceContent .card{
+    width: 370px;
+    display: flex;
+    cursor: pointer;
+}
+
+.service .serviceContent .card .images{
+    margin-right: 20px;
+}
+
+.service .serviceContent .card h3{
+    margin-bottom: 10px;
+}
+
+.serviceContent .card:hover .images{
+    animation: rotate 1s linear;
+    transition: .5s;
+}
+
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+        transition: .5s;
+    }
+}
+
+/* Provide */
+.provide{
+    padding: 4rem 4%;
+    background-image: url('ab-para.jpg');
+    margin-top: 80px;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+.provide .provideTitle{
+    text-align: center;
+}
+
+.provide .provideTitle .title h3{
+    font-size: 35px;
+}
+
+.provide .provideContent{
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 40px;
+    color: #fff;
+}
+
+.provide .provideContent .card{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 250px;
+    flex-direction: column;
+    color: #fff;
+}
+
+.provide .provideContent h3{
+    font-size: 25px;
+}
+
+/* Enroll */
+.enroll{
+    padding: 2rem 4%;
+}
+
+.enrollTitle{
+    text-align: center;
+}
+
+.enroll .enrollTitle h3{
+    font-size: 30px;
+    color: green;
+    font-weight: 500;
+}
+
+.enroll .enrollContent{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.enroll .enrollContent .card{
+    display: flex;
+    align-items: center;
+    background-color: #ca4f4a;
+    width: 400px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.enroll .enrollContent .card2{
+    background-color: #88c247;
+}
+
+.enroll .enrollContent .images{
+    margin-right: 20px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.enroll .enrollContent h3{
+    font-weight: 500;
+}
+
+/* Special Enroll */
+.specialEnroll{
+    background-image: url('per-bg.png');
+    padding: 2rem 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 100px;
+}
+
+.specialEnroll .specialContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.specialEnroll .specialContent .images{
+    margin-top: -100px;
+}
+
+.specialEnroll .specialContent .text{
+    margin-top: 50px;
+}
+
+.specialEnroll .specialContent .text h4{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.specialEnroll .specialContent button{
+    margin-top: 30px;
+    background-color: orange;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+/* Event */
+.event{
+    display: flex;
+    padding: 4rem 4%;
+}
+
+.event .upcomingEvent .events{
+    margin-top: 30px;
+}
+
+.event .upcomingEvent .events .card{
+    display: flex;
+    align-items: center;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.event .upcomingEvent .events .card .images{
+    margin-right: 15px;
+}
+
+.event .upcomingEvent .events .card .date{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.event .upcomingEvent .events .card .date i{
+    margin-right: 10px;
+}
+
+.event .upcomingEvent .title{
+    color: orange;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.event .upcomingEvent .events .card:nth-child(1) h3{
+    color: orange;
+}
+
+.event .upcomingEvent .events .card:nth-child(2) h3{
+    color: #03a9f4;
+}
+
+.event .upcomingEvent .events .card:nth-child(3) h3{
+    color: blue;
+}
+
+.event .chooseUs h3{
+    color: #03a9f4;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.sideEvent .chooseContent{
+    margin-top: 20px;
+}
+
+.sideEvent .chooseContent .card{
+    background-color: #03a9f4;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* testimony */
+.testimony{
+    background-image: url('par-tes-bg.jpg');
+    padding: 4rem 4%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.testimony .testimonyTitle{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.testimony .testimonyTitle h3{
+    color: #03a9f4;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.testimony .testimonyTitle p{
+    max-width: 500px;
+}
+
+.testimony .testimonyContent{
+    margin-top: 50px;
+}
+
+.testimony .testimonyContent .testimonyWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.testimony .testimonyContent .card{
+    background-color: red;
+    padding: 30px 40px;
+    width: 700px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    border-radius: 8px;
+    border: 3px solid #fff;
+}
+
+.testimony .testimonyContent .card .images{
+    margin-top: 20px;
+}
+
+/* Teacher */
+.ourTeacher{
+    padding: 3rem 4%;
+    background-image: url('teachers-area-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ourTeacher .teacherTitle{
+    text-align: center;
+    color: #88c247;
+}
+
+.ourTeacher .teacherTitle h1{
+    font-size: 40px;
+}
+
+.ourTeacher .teacherContent{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ourTeacher .teacherContent .card{
+    background-color: #fff;
+    width: 260px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.ourTeacher .teacherContent .card:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.ourTeacher .teacherContent .images{
+    overflow: hidden;
+}
+
+.ourTeacher .teacherContent .images,
+.ourTeacher .teacherContent .images img{
+    width: 100%;
+}
+
+.ourTeacher .teacherContent .card .cardText{
+    padding: 10px;
+}
+
+.ourTeacher .teacherContent .card .cardText ul{
+    display: flex;
+    list-style: none;
+}
+
+.ourTeacher .teacherContent .card .cardText h3{
+    color: #03a9f4;
+}
+
+.ourTeacher .teacherContent .card .cardText p{
+    margin: 10px 0;
+    color: #555;
+}
+
+.ourTeacher .teacherContent .card .cardText ul li{
+    margin-right: 15px;
+}
+
+.ourTeacher .teacherContent .card .cardText a{
+    font-size: 20px;
+}
+
+.ourTeacher .teacherContent .card .cardText ul li:nth-child(1) a{
+    color: #03a9f4;
+}
+
+.ourTeacher .teacherContent .card .cardText ul li:nth-child(2) a{
+    color: #ca4f4a;
+}
+
+.ourTeacher .teacherContent .card .cardText ul li:nth-child(3) a{
+    color: #88c247;
+}
+
+.ourTeacher .teacherContent .card .cardText ul li:nth-child(4) a{
+    color: blue;
+}
+
+/* News */
+.news{
+    padding: 4rem 4%;
+}
+
+.news .newsTitle{
+    text-align: center;
+}
+
+.news .newsTitle h1{
+    color: #03a9f4;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.news .newsContent{
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newsContent .card{
+    width: 350px;
+    cursor: pointer;
+}
+
+.news .card .cardText{
+    padding: 10px;
+}
+
+.news .card .cardText h3{
+    color: orange;
+}
+
+.news .card .cardText p{
+    color: #555;
+    margin: 10px 0;
+}
+
+.news .card .cardText ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.news .card .cardText li i{
+    color: #ca4f4a;
+    margin-right: 10px;
+}
+
+.news .card .cardText li a{
+    color: #ca4f4a;
+    text-decoration: none;
+}
+
+/* Contact */
+.contact{
+    padding: 4rem 4%;
+    position: relative;
+    padding-bottom: 5rem;
+}
+
+.contact:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-image: url('footer-two-bg.png');
+    height: 25px;
+}
+
+.contact .contactTitle{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .contactTitle .title h1{
+    color: orange;
+    font-size: 40px;
+}
+
+.contact .contactTitle .title p{
+    max-width: 500px;
+    margin-top: 10px;
+}
+
+.contactContent{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactContent .card{
+    text-align: center;
+    width: 300px;
+    color: #555;
+}
+
+.contact .contactContent .card:nth-child(1) h3{
+    color: orange;
+    margin: 10px 0;
+}
+
+.contact .contactContent .card:nth-child(2) h3{
+    color: #03a9f4;
+    margin: 10px 0;
+}
+
+.contact .contactContent .card:nth-child(3) h3{
+    color: #ca4f4a;
+    margin: 10px 0;
+}
+
+.contact .contactContent .card:nth-child(4) h3{
+    color: purple;
+    margin: 10px 0;
+}
+
+footer{
+    background-image: url('footer-top-bg-2.png');
+    padding: 4rem 4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footers{
+    max-width: 300px;
+}
+
+footer h3{
+    margin-bottom: 30px;
+}
+
+footer h3{
+    color: #ca4f4a;
+}
+
+footer ul li{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+footer ul li i{
+    margin-right: 10px;
+    color: #ca4f4a;
+}
+
+footer a{
+    text-decoration: none;
+    color: #555;
+}
+
+footer .card{
+    display: flex;
+}
+
+footer .card .images{
+    margin-right: 10px;
+}
+
+footer input{
+    padding: 15px 20px;
+    border: 1px solid #03a9f4;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.secondFooter{
+    background-color: #88c247;
+    color: #fff;
+    padding: 30px 4%;
+    position: relative;
+}
+
+.secondFooter::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-image: url(footer-three-bg.png);
+    top: -60px;
+    z-index: 10;
+}
+
+
+@media (max-width:980px) {
+    .navbar .navigation{
+        display: none;
+    }
+    
+
+    .navbar .burger{
+        display: block;
+    }
+
+    .classesSection .classesContent{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        row-gap: 30px;
+    }
+    
+    .facilities .facilitiesContent{
+        flex-wrap: wrap;
+    }
+    
+    .facilities .facilitiesContent .facilityText ul{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .facilities .facilitiesContent .facilityText ul li{
+        width: 150px;
+    }
+    
+    .facilities .facilityImg img{
+        width: 100%;
+    }
+
+    .facilities .facilityImg{
+        width: 800px;
+        margin-top: 50px;
+    }
+    
+    .service .serviceContent .card{
+        width: 320px;
+        display: flex;
+        cursor: pointer;
+    }
+
+    /* Provide Content */
+    .provide .provideContent .card{
+    width: 150px;
+    }
+    
+    .enroll .enrollContent{
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .event{
+        flex-wrap: wrap;
+    }
+    
+    .ourTeacher .teacherContent{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        row-gap: 40px;
+    }
+    
+    .news .newsContent{
+        flex-wrap: wrap;
+        row-gap: 40px;
+        justify-content: center;
+    }
+
+    .news .newsContent .card{
+        margin-right: 15px;
+    }
+
+    .news .newsContent .card img{
+        width: 100%;
+    }
+    
+    .contactContent{
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 30px;
+    }
+
+    footer{
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media (max-width:480px) {
+    .navbar .navigation{
+        display: none;
+    }
+
+    .navbar .burger{
+        display: block;
+    }
+
+    .classesSection .classesContent{
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 30px;
+    }
+    
+    .facilities .facilitiesContent{
+        flex-wrap: wrap;
+    }
+    
+    .facilities .facilitiesContent .facilityText ul{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .facilities .facilitiesContent .facilityText ul li{
+        width: 150px;
+    }
+    
+    .facilities .facilityImg img{
+        width: 100%;
+    }
+
+    .facilities .facilityImg{
+        width: 400px;
+        margin-top: 50px;
+    }
+
+    /* Provide Content */
+    .provide .provideContent .card{
+    width: 150px;
+    }
+    
+    .enroll .enrollContent{
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .event{
+        flex-wrap: wrap;
+    }
+    
+    .ourTeacher .teacherContent{
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 40px;
+    }
+    
+    .news .newsContent{
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+    
+    .contactContent{
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 30px;
+    }
+
+    footer{
+        flex-wrap: wrap;
+    }
+
+}
